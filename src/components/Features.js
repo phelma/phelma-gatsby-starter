@@ -8,12 +8,7 @@ const FeatureGrid = ({ gridItems }) => (
       <div key={item.text} >
         <section >
           <div >
-            <div
-              style={{
-                width: '240px',
-                display: 'inline-block',
-              }}
-            >
+            <div>
               <PreviewCompatibleImage imageInfo={item} />
             </div>
           </div>

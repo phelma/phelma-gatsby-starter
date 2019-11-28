@@ -27,15 +27,7 @@ export const ProductPageTemplate = ({
         })`,
       }}
     >
-      <h2
-        
-        style={{
-          boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-          backgroundColor: '#f40',
-          color: 'white',
-          padding: '1rem',
-        }}
-      >
+      <h2>
         {title}
       </h2>
     </div>
@@ -82,7 +74,6 @@ export const ProductPageTemplate = ({
               </div>
               <Testimonials testimonials={testimonials} />
               <div
-                
                 style={{
                   backgroundImage: `url(${
                     fullImage.childImageSharp

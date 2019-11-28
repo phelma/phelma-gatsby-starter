@@ -28,7 +28,7 @@ class TagRoute extends React.Component {
             <div >
               <div
                 
-                style={{ marginBottom: '6rem' }}
+                
               >
                 <h3 >{tagHeader}</h3>
                 <ul >{postLinks}</ul>

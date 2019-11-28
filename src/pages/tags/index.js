@@ -19,7 +19,7 @@ const TagsPage = ({
         <div >
           <div
             
-            style={{ marginBottom: '6rem' }}
+            
           >
             <h1 >Tags</h1>
             <ul >
