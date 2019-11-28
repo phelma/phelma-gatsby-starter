@@ -43,9 +43,9 @@ export default class Contact extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="section">
-          <div className="container">
-            <div className="content">
+        <section >
+          <div >
+            <div >
               <h1>File Upload</h1>
               <form
                 name="file-upload"
@@ -63,13 +63,13 @@ export default class Contact extends React.Component {
                     <input name="bot-field" onChange={this.handleChange} />
                   </label>
                 </div>
-                <div className="field">
-                  <label className="label" htmlFor={'name'}>
+                <div >
+                  <label  htmlFor={'name'}>
                     Your name
                   </label>
-                  <div className="control">
+                  <div >
                     <input
-                      className="input"
+                      
                       type={'text'}
                       name={'name'}
                       onChange={this.handleChange}
@@ -78,23 +78,23 @@ export default class Contact extends React.Component {
                     />
                   </div>
                 </div>
-                <div className="field">
-                  <div className="file">
-                    <label className="file-label">
+                <div >
+                  <div >
+                    <label >
                       <input
-                        className="file-input"
+                        
                         type="file"
                         name="attachment"
                         onChange={this.handleAttachment}
                       />
-                      <span className="file-cta">
-                        <span className="file-label">Choose a file…</span>
+                      <span >
+                        <span >Choose a file…</span>
                       </span>
                     </label>
                   </div>
                 </div>
-                <div className="field">
-                  <button className="button is-link" type="submit">
+                <div >
+                  <button  type="submit">
                     Send
                   </button>
                 </div>
