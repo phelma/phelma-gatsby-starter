@@ -6,9 +6,9 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <section >
-          <div >
-            <div >
+        <section>
+          <div>
+            <div>
               <h1>Hi people</h1>
               <p>
                 This is an example site integrating Netlify’s form handling with

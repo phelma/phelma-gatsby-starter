@@ -36,9 +36,9 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <section >
-          <div >
-            <div >
+        <section>
+          <div>
+            <div>
               <h1>Contact</h1>
               <form
                 name="contact"
@@ -47,7 +47,7 @@ export default class Index extends React.Component {
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}
-              >
+             >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                 <input type="hidden" name="form-name" value="contact" />
                 <div hidden>
@@ -56,11 +56,11 @@ export default class Index extends React.Component {
                     <input name="bot-field" onChange={this.handleChange} />
                   </label>
                 </div>
-                <div >
+                <div>
                   <label  htmlFor={'name'}>
                     Your name
                   </label>
-                  <div >
+                  <div>
                     <input
                       
                       type={'text'}
@@ -71,11 +71,11 @@ export default class Index extends React.Component {
                     />
                   </div>
                 </div>
-                <div >
+                <div>
                   <label  htmlFor={'email'}>
                     Email
                   </label>
-                  <div >
+                  <div>
                     <input
                       
                       type={'email'}
@@ -86,11 +86,11 @@ export default class Index extends React.Component {
                     />
                   </div>
                 </div>
-                <div >
+                <div>
                   <label  htmlFor={'message'}>
                     Message
                   </label>
-                  <div >
+                  <div>
                     <textarea
                       
                       name={'message'}
@@ -100,7 +100,7 @@ export default class Index extends React.Component {
                     />
                   </div>
                 </div>
-                <div >
+                <div>
                   <button  type="submit">
                     Send
                   </button>

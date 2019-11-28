@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const FeatureGrid = ({ gridItems }) => (
-  <div >
+  <div>
     {gridItems.map(item => (
-      <div key={item.text} >
-        <section >
-          <div >
+      <div key={item.text}>
+        <section>
+          <div>
             <div>
               <PreviewCompatibleImage imageInfo={item} />
             </div>

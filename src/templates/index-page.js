@@ -23,7 +23,7 @@ export const IndexPageTemplate = ({
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`
       }}
-    >
+   >
       <div>
         <h1>
           {title}
@@ -33,42 +33,42 @@ export const IndexPageTemplate = ({
         </h3>
       </div>
     </div>
-    <section >
-      <div >
-        <div >
-          <div >
-            <div >
-              <div >
-                <div >
-                  <div >
-                    <h1 >{mainpitch.title}</h1>
+    <section>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <h1>{mainpitch.title}</h1>
                   </div>
-                  <div >
-                    <h3 >{mainpitch.description}</h3>
+                  <div>
+                    <h3>{mainpitch.description}</h3>
                   </div>
                 </div>
-                <div >
-                  <div >
-                    <h3 >
+                <div>
+                  <div>
+                    <h3>
                       {heading}
                     </h3>
                     <p>{description}</p>
                   </div>
                 </div>
                 <Features gridItems={intro.blurbs} />
-                <div >
-                  <div >
+                <div>
+                  <div>
                     <Link  to="/products">
                       See all products
                     </Link>
                   </div>
                 </div>
-                <div >
-                  <h3 >
+                <div>
+                  <h3>
                     Latest stories
                   </h3>
                   <BlogRoll />
-                  <div >
+                  <div>
                     <Link  to="/blog">
                       Read more
                     </Link>

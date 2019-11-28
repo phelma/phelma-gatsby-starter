@@ -13,16 +13,16 @@ const TagsPage = ({
   },
 }) => (
   <Layout>
-    <section >
+    <section>
       <Helmet title={`Tags | ${title}`} />
-      <div >
-        <div >
+      <div>
+        <div>
           <div
             
             
-          >
-            <h1 >Tags</h1>
-            <ul >
+         >
+            <h1>Tags</h1>
+            <ul>
               {group.map(tag => (
                 <li key={tag.fieldValue}>
                   <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>

@@ -10,22 +10,21 @@ import vimeo from '../img/social/vimeo.svg'
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer >
-        <div >
+      <footer>
+        <div>
           <img
             src={logo}
             alt="Kaldi"
-            
           />
         </div>
-        <div >
-          <div >
-            <div >
-              <div >
-                <section >
-                  <ul >
+        <div>
+          <div>
+            <div>
+              <div>
+                <section>
+                  <ul>
                     <li>
-                      <Link to="/" >
+                      <Link to="/">
                         Home
                       </Link>
                     </li>
@@ -50,16 +49,16 @@ const Footer = class extends React.Component {
                         href="/admin/"
                         target="_blank"
                         rel="noopener noreferrer"
-                      >
+                     >
                         Admin
                       </a>
                     </li>
                   </ul>
                 </section>
               </div>
-              <div >
+              <div>
                 <section>
-                  <ul >
+                  <ul>
                     <li>
                       <Link  to="/blog">
                         Latest Stories
@@ -73,7 +72,7 @@ const Footer = class extends React.Component {
                   </ul>
                 </section>
               </div>
-              <div >
+              <div>
                 <a title="facebook" href="https://facebook.com">
                   <img
                     src={facebook}

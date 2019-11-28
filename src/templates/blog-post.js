@@ -17,20 +17,20 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section >
+    <section>
       {helmet || ''}
-      <div >
-        <div >
-          <div >
-            <h1 >
+      <div>
+        <div>
+          <div>
+            <h1>
               {title}
             </h1>
             <p>{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
-              <div >
+              <div>
                 <h4>Tags</h4>
-                <ul >
+                <ul>
                   {tags.map(tag => (
                     <li key={tag + `tag`}>
                       <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>

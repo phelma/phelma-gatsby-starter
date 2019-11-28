@@ -43,9 +43,9 @@ export default class Contact extends React.Component {
   render() {
     return (
       <Layout>
-        <section >
-          <div >
-            <div >
+        <section>
+          <div>
+            <div>
               <h1>File Upload</h1>
               <form
                 name="file-upload"
@@ -54,7 +54,7 @@ export default class Contact extends React.Component {
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}
-              >
+             >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                 <input type="hidden" name="form-name" value="file-upload" />
                 <div hidden>
@@ -63,11 +63,11 @@ export default class Contact extends React.Component {
                     <input name="bot-field" onChange={this.handleChange} />
                   </label>
                 </div>
-                <div >
+                <div>
                   <label  htmlFor={'name'}>
                     Your name
                   </label>
-                  <div >
+                  <div>
                     <input
                       
                       type={'text'}
@@ -78,22 +78,22 @@ export default class Contact extends React.Component {
                     />
                   </div>
                 </div>
-                <div >
-                  <div >
-                    <label >
+                <div>
+                  <div>
+                    <label>
                       <input
                         
                         type="file"
                         name="attachment"
                         onChange={this.handleAttachment}
                       />
-                      <span >
-                        <span >Choose a file…</span>
+                      <span>
+                        <span>Choose a file…</span>
                       </span>
                     </label>
                   </div>
                 </div>
-                <div >
+                <div>
                   <button  type="submit">
                     Send
                   </button>

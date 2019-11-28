@@ -18,7 +18,7 @@ export const ProductPageTemplate = ({
   fullImage,
   pricing,
 }) => (
-  <div >
+  <div>
     <div
       
       style={{
@@ -26,47 +26,47 @@ export const ProductPageTemplate = ({
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
       }}
-    >
+   >
       <h2>
         {title}
       </h2>
     </div>
-    <section >
-      <div >
-        <div >
-          <div >
-            <div >
-              <h3 >{heading}</h3>
+    <section>
+      <div>
+        <div>
+          <div>
+            <div>
+              <h3>{heading}</h3>
               <p>{description}</p>
             </div>
           </div>
-          <div >
-            <div >
+          <div>
+            <div>
               <Features gridItems={intro.blurbs} />
-              <div >
-                <div >
-                  <h3 >
+              <div>
+                <div>
+                  <h3>
                     {main.heading}
                   </h3>
                   <p>{main.description}</p>
                 </div>
               </div>
-              <div >
-                <div >
-                  <div >
-                    <div >
-                      <article >
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <article>
                         <PreviewCompatibleImage imageInfo={main.image1} />
                       </article>
                     </div>
-                    <div >
-                      <article >
+                    <div>
+                      <article>
                         <PreviewCompatibleImage imageInfo={main.image2} />
                       </article>
                     </div>
                   </div>
-                  <div >
-                    <article >
+                  <div>
+                    <article>
                       <PreviewCompatibleImage imageInfo={main.image3} />
                     </article>
                   </div>
@@ -82,10 +82,10 @@ export const ProductPageTemplate = ({
                   })`,
                 }}
               />
-              <h2 >
+              <h2>
                 {pricing.heading}
               </h2>
-              <p >{pricing.description}</p>
+              <p>{pricing.description}</p>
               <Pricing data={pricing.plans} />
             </div>
           </div>

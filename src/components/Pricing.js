@@ -2,20 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Pricing = ({ data }) => (
-  <div >
+  <div>
     {data.map(price => (
-      <div key={price.plan} >
-        <section >
-          <h4 >
+      <div key={price.plan}>
+        <section>
+          <h4>
             {price.plan}
           </h4>
-          <h2 >
+          <h2>
             ${price.price}
           </h2>
-          <p >{price.description}</p>
+          <p>{price.description}</p>
           <ul>
             {price.items.map(item => (
-              <li key={item} >
+              <li key={item}>
                 {item}
               </li>
             ))}
