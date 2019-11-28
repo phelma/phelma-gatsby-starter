@@ -1,7 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -34,15 +32,14 @@ const Navbar = class extends React.Component {
 
   render() {
     return (
-      <nav
-        
+      <nav   
         role="navigation"
         aria-label="main-navigation"
       >
-        <div >
+        <div>
           <div >
             <Link to="/"  title="Logo">
-              <img src={logo} alt="Kaldi"  />
+              Kaldi
             </Link>
             {/* Hamburger menu */}
             <div
@@ -75,18 +72,6 @@ const Navbar = class extends React.Component {
               <Link  to="/contact/examples">
                 Form Examples
               </Link>
-            </div>
-            <div >
-              <a
-                
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span >
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
             </div>
           </div>
         </div>
