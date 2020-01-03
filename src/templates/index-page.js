@@ -14,7 +14,7 @@ export const IndexPageTemplate = ({
   heading,
   description,
 }) => (
-  <Container px={4}>
+  <Container px={2}>
     {/* TODO: use gatsby-image */}
     <div style={{
         backgroundImage: `url(${

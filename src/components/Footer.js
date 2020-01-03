@@ -11,7 +11,7 @@ import vimeo from '../img/social/vimeo.svg'
 const Footer = class extends React.Component {
   render() {
     return (
-      <Container p={4}>
+      <Container p={2}>
         Footer
       </Container>
     )

@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 
 import { Styled } from 'theme-ui'
 
-import { Flex, Box } from '@theme-ui/components'
+import { Flex, Container } from '@theme-ui/components'
 import { Global, css } from "@emotion/core"
 
 import Footer from '../components/Footer'
@@ -74,7 +74,7 @@ const TemplateWrapper = ({ children }) => {
 
       <Navbar />
       
-      <Box as="main" sx={{ flexGrow: 1, maxWidth: 1000 }} px={1} mx="auto">{children}</Box>
+      <Container as="main" px={2} mx="auto">{children}</Container>
       
       <Footer />
 
