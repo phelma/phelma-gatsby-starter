@@ -15,4 +15,4 @@
   - Generic Footer
   - Generic Navbar
   - Homepage
-- Icons, react-fontawesome
+- ~~Icons, react-fontawesome~~

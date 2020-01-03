@@ -3,9 +3,10 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
 import { Container } from '@theme-ui/components'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 export const IndexPageTemplate = ({
   image,
@@ -14,41 +15,33 @@ export const IndexPageTemplate = ({
   description,
 }) => (
   <Container px={4}>
+    {/* TODO: use gatsby-image */}
     <div style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`
+        })`,
+        minHeight: 100
       }}>
-      <div>
-        <h1>
-          {title}
-        </h1>
-      </div>
+    </div>
+    <div>
+      <h1>
+        <FontAwesomeIcon icon={faCoffee} />
+        {' '}
+        {title}
+      </h1>
     </div>
     <section>
       <h3>
         {heading}
       </h3>
       <p>{description}</p>
-      <Features gridItems={[]} />
 
       <Link  to="/products">
         See all products
       </Link>
 
-      <div>
-        <h3>
-          Latest stories
-        </h3>
-        <BlogRoll />
-        <div>
-          <Link  to="/blog">
-            Read more
-          </Link>
-        </div>
-      </div>
-
     </section>
+
   </Container>
 )
 
