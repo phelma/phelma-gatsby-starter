@@ -8,9 +8,7 @@ export default class BlogIndexPage extends React.Component {
     return (
       <Layout>
         <div>
-          <h1>
-            Latest Stories
-          </h1>
+          <h1>Latest Stories</h1>
         </div>
         <section>
           <div>

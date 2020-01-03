@@ -13,10 +13,8 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
         <div>
           <div>
             <div>
-              <h2>
-                {title}
-              </h2>
-              <PageContent  content={content} />
+              <h2>{title}</h2>
+              <PageContent content={content} />
             </div>
           </div>
         </div>

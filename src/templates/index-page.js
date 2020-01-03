@@ -8,40 +8,28 @@ import { Container } from '@theme-ui/components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
-export const IndexPageTemplate = ({
-  image,
-  title,
-  heading,
-  description,
-}) => (
+export const IndexPageTemplate = ({ image, title, heading, description }) => (
   <Container px={2}>
     {/* TODO: use gatsby-image */}
-    <div style={{
+    <div
+      style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        minHeight: 100
-      }}>
-    </div>
+        minHeight: 100,
+      }}
+    ></div>
     <div>
       <h1>
-        <FontAwesomeIcon icon={faCoffee} />
-        {' '}
-        {title}
+        <FontAwesomeIcon icon={faCoffee} /> {title}
       </h1>
     </div>
     <section>
-      <h3>
-        {heading}
-      </h3>
+      <h3>{heading}</h3>
       <p>{description}</p>
 
-      <Link  to="/products">
-        See all products
-      </Link>
-
+      <Link to="/products">See all products</Link>
     </section>
-
   </Container>
 )
 

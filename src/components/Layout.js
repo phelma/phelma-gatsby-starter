@@ -4,34 +4,36 @@ import { Helmet } from 'react-helmet'
 import { Styled } from 'theme-ui'
 
 import { Flex, Container } from '@theme-ui/components'
-import { Global, css } from "@emotion/core"
+import { Global, css } from '@emotion/core'
 
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 
 import useSiteMetadata from './SiteMetadata'
-import { withPrefix } from 'gatsby' 
+import { withPrefix } from 'gatsby'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
-    <Flex sx={{
-      minHeight: '100vh',
-      flexDirection: 'column'
-    }}>
+    <Flex
+      sx={{
+        minHeight: '100vh',
+        flexDirection: 'column',
+      }}
+    >
       <Global
         styles={theme => ({
           'html, body': {
             margin: 0,
-            padding: 0
+            padding: 0,
           },
           html: {
             boxSizing: 'border-box',
-            fontFamily: 'sans-serif'
+            fontFamily: 'sans-serif',
           },
           '*, *:before, *:after': {
-            boxSizing: 'inherit'
-          }
+            boxSizing: 'inherit',
+          },
         })}
       />
       <Helmet>
@@ -73,11 +75,12 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
 
       <Navbar />
-      
-      <Container as="main" px={2} mx="auto">{children}</Container>
-      
-      <Footer />
 
+      <Container as="main" px={2} mx="auto">
+        {children}
+      </Container>
+
+      <Footer />
     </Flex>
   )
 }

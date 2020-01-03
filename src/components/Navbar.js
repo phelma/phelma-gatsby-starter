@@ -4,20 +4,18 @@ import { jsx } from 'theme-ui'
 import { Container, Box } from '@theme-ui/components'
 import { Link } from 'gatsby'
 
-
-const NavItem = ({children, ...props}) => <Box mx={1} {...props}>{children}</Box>
+const NavItem = ({ children, ...props }) => (
+  <Box mx={1} {...props}>
+    {children}
+  </Box>
+)
 
 const Navbar = () => {
   const [active, setActive] = useState(false)
   const toggleActive = () => setActive(!active)
 
   return (
-    <Container
-      as="nav"
-      role="navigation"
-      aria-label="main-navigation"
-      p={2}
-    >      
+    <Container as="nav" role="navigation" aria-label="main-navigation" p={2}>
       <NavItem>
         <Link to="/" title="Logo">
           Kaldi
@@ -47,7 +45,6 @@ const Navbar = () => {
       </div>
     </Container>
   )
-
 }
 
 export default Navbar

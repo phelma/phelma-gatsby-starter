@@ -20,16 +20,13 @@ export const ProductPageTemplate = ({
 }) => (
   <div>
     <div
-      
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
       }}
-   >
-      <h2>
-        {title}
-      </h2>
+    >
+      <h2>{title}</h2>
     </div>
     <section>
       <div>
@@ -45,9 +42,7 @@ export const ProductPageTemplate = ({
               <Features gridItems={intro.blurbs} />
               <div>
                 <div>
-                  <h3>
-                    {main.heading}
-                  </h3>
+                  <h3>{main.heading}</h3>
                   <p>{main.description}</p>
                 </div>
               </div>
@@ -82,9 +77,7 @@ export const ProductPageTemplate = ({
                   })`,
                 }}
               />
-              <h2>
-                {pricing.heading}
-              </h2>
+              <h2>{pricing.heading}</h2>
               <p>{pricing.description}</p>
               <Pricing data={pricing.plans} />
             </div>

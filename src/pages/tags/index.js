@@ -17,10 +17,7 @@ const TagsPage = ({
       <Helmet title={`Tags | ${title}`} />
       <div>
         <div>
-          <div
-            
-            
-         >
+          <div>
             <h1>Tags</h1>
             <ul>
               {group.map(tag => (

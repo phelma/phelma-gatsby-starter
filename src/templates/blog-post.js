@@ -22,9 +22,7 @@ export const BlogPostTemplate = ({
       <div>
         <div>
           <div>
-            <h1>
-              {title}
-            </h1>
+            <h1>{title}</h1>
             <p>{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (

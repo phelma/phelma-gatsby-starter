@@ -47,7 +47,7 @@ export default class Index extends React.Component {
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}
-             >
+              >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                 <input type="hidden" name="form-name" value="contact" />
                 <div hidden>
@@ -57,12 +57,9 @@ export default class Index extends React.Component {
                   </label>
                 </div>
                 <div>
-                  <label  htmlFor={'name'}>
-                    Your name
-                  </label>
+                  <label htmlFor={'name'}>Your name</label>
                   <div>
                     <input
-                      
                       type={'text'}
                       name={'name'}
                       onChange={this.handleChange}
@@ -72,12 +69,9 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div>
-                  <label  htmlFor={'email'}>
-                    Email
-                  </label>
+                  <label htmlFor={'email'}>Email</label>
                   <div>
                     <input
-                      
                       type={'email'}
                       name={'email'}
                       onChange={this.handleChange}
@@ -87,12 +81,9 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div>
-                  <label  htmlFor={'message'}>
-                    Message
-                  </label>
+                  <label htmlFor={'message'}>Message</label>
                   <div>
                     <textarea
-                      
                       name={'message'}
                       onChange={this.handleChange}
                       id={'message'}
@@ -101,9 +92,7 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div>
-                  <button  type="submit">
-                    Send
-                  </button>
+                  <button type="submit">Send</button>
                 </div>
               </form>
             </div>

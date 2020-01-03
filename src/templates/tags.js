@@ -26,10 +26,7 @@ class TagRoute extends React.Component {
           <Helmet title={`${tag} | ${title}`} />
           <div>
             <div>
-              <div
-                
-                
-             >
+              <div>
                 <h3>{tagHeader}</h3>
                 <ul>{postLinks}</ul>
                 <p>
