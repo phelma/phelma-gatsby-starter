@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React, { useState } from 'react'
 import { jsx } from 'theme-ui'
-import { Flex, Box } from '@theme-ui/components'
+import { Container, Box } from '@theme-ui/components'
 import { Link } from 'gatsby'
 
 
@@ -12,7 +12,7 @@ const Navbar = () => {
   const toggleActive = () => setActive(!active)
 
   return (
-    <Flex
+    <Container
       as="nav"
       role="navigation"
       aria-label="main-navigation"
@@ -45,7 +45,7 @@ const Navbar = () => {
           Form Examples
         </NavItem>
       </div>
-    </Flex>
+    </Container>
   )
 
 }

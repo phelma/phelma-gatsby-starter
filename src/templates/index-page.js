@@ -5,6 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import { Container } from '@theme-ui/components'
 
 export const IndexPageTemplate = ({
   image,
@@ -12,7 +13,7 @@ export const IndexPageTemplate = ({
   heading,
   description,
 }) => (
-  <div>
+  <Container px={4}>
     <div style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
@@ -25,45 +26,30 @@ export const IndexPageTemplate = ({
       </div>
     </div>
     <section>
+      <h3>
+        {heading}
+      </h3>
+      <p>{description}</p>
+      <Features gridItems={[]} />
+
+      <Link  to="/products">
+        See all products
+      </Link>
+
       <div>
+        <h3>
+          Latest stories
+        </h3>
+        <BlogRoll />
         <div>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <div>
-                    <h3>
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <Features gridItems={[]} />
-                <div>
-                  <div>
-                    <Link  to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
-                <div>
-                  <h3>
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div>
-                    <Link  to="/blog">
-                      Read more
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Link  to="/blog">
+            Read more
+          </Link>
         </div>
       </div>
+
     </section>
-  </div>
+  </Container>
 )
 
 IndexPageTemplate.propTypes = {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Box } from '@theme-ui/components'
+import { Container } from '@theme-ui/components'
 
 import logo from '../img/logo.svg'
 import facebook from '../img/social/facebook.svg'
@@ -11,9 +11,9 @@ import vimeo from '../img/social/vimeo.svg'
 const Footer = class extends React.Component {
   render() {
     return (
-      <Box p={2}>
+      <Container p={4}>
         Footer
-      </Box>
+      </Container>
     )
   }
 }

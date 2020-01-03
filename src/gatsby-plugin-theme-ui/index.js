@@ -42,6 +42,9 @@ export default {
     "secondary": "#30c",
     "muted": "#f6f6f6"
   },
+  "sizes": {
+    "container": 1024
+  },
   "styles": {
     "h1": {
       "color": "text",

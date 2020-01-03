@@ -26,7 +26,8 @@ const TemplateWrapper = ({ children }) => {
             padding: 0
           },
           html: {
-            boxSizing: 'border-box'
+            boxSizing: 'border-box',
+            fontFamily: 'sans-serif'
           },
           '*, *:before, *:after': {
             boxSizing: 'inherit'
