@@ -74,7 +74,7 @@ const TemplateWrapper = ({ children }) => {
 
       <Navbar />
       
-      <Box as="main" sx={{ flexGrow: 1 }}>{children}</Box>
+      <Box as="main" sx={{ flexGrow: 1, maxWidth: 1000 }} px={1} mx="auto">{children}</Box>
       
       <Footer />
 
