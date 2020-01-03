@@ -1,83 +1,53 @@
-import React from 'react'
+/** @jsx jsx */
+import React, { useState } from 'react'
+import { jsx } from 'theme-ui'
+import { Flex, Box } from '@theme-ui/components'
 import { Link } from 'gatsby'
 
-const Navbar = class extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      active: false,
-      navBarActiveClass: '',
-    }
-  }
 
-  toggleHamburger = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: 'is-active',
-            })
-          : this.setState({
-              navBarActiveClass: '',
-            })
-      }
-    )
-  }
+const NavItem = ({children, ...props}) => <Box mx={1} {...props}>{children}</Box>
 
-  render() {
-    return (
-      <nav   
-        role="navigation"
-        aria-label="main-navigation"
-     >
-        <div></div>
-          <div>
-            <Link to="/"  title="Logo">
-              Kaldi
-            </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-           >
-              <span />
-              <span />
-              <span />
-            </div>
-          </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-         >
-            <div>
-              <Link  to="/about">
-                About
-              </Link>
-              <Link  to="/products">
-                Products
-              </Link>
-              <Link  to="/blog">
-                Blog
-              </Link>
-              <Link  to="/contact">
-                Contact
-              </Link>
-              <Link  to="/contact/examples">
-                Form Examples
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
-    )
-  }
+const Navbar = () => {
+  const [active, setActive] = useState(false)
+  const toggleActive = () => setActive(!active)
+
+  return (
+    <Flex
+      as="nav"
+      role="navigation"
+      aria-label="main-navigation"
+      p={2}
+    >      
+      <NavItem>
+        <Link to="/" title="Logo">
+          Kaldi
+        </Link>
+      </NavItem>
+
+      <div>
+        <NavItem as={Link} to="/about">
+          About
+        </NavItem>
+
+        <NavItem as={Link} to="/products">
+          Products
+        </NavItem>
+
+        <NavItem as={Link} to="/blog">
+          Blog
+        </NavItem>
+
+        <NavItem as={Link} to="/contact">
+          Contact
+        </NavItem>
+
+        <NavItem as={Link} to="/contact/examples">
+          Form Examples
+        </NavItem>
+      </div>
+    </Flex>
+  )
+
 }
 
 export default Navbar

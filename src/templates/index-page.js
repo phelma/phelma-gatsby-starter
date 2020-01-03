@@ -10,27 +10,18 @@ export const IndexPageTemplate = ({
   image,
   title,
   heading,
-  subheading,
-  mainpitch,
   description,
-  intro,
 }) => (
   <div>
-    <div
-      
-      style={{
+    <div style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`
-      }}
-   >
+      }}>
       <div>
         <h1>
           {title}
         </h1>
-        <h3>
-          {subheading}
-        </h3>
       </div>
     </div>
     <section>
@@ -41,21 +32,13 @@ export const IndexPageTemplate = ({
               <div>
                 <div>
                   <div>
-                    <h1>{mainpitch.title}</h1>
-                  </div>
-                  <div>
-                    <h3>{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div>
-                  <div>
                     <h3>
                       {heading}
                     </h3>
                     <p>{description}</p>
                   </div>
                 </div>
-                <Features gridItems={intro.blurbs} />
+                <Features gridItems={[]} />
                 <div>
                   <div>
                     <Link  to="/products">
@@ -87,12 +70,7 @@ IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
   description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
 }
 
 const IndexPage = ({ data }) => {
@@ -104,10 +82,7 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
-        intro={frontmatter.intro}
       />
     </Layout>
   )
@@ -136,26 +111,7 @@ export const pageQuery = graphql`
           }
         }
         heading
-        subheading
-        mainpitch {
-          title
-          description
-        }
         description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-          description
-        }
       }
     }
   }

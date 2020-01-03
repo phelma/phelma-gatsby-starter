@@ -69,7 +69,6 @@ export default class Contact extends React.Component {
                   </label>
                   <div>
                     <input
-                      
                       type={'text'}
                       name={'name'}
                       onChange={this.handleChange}
