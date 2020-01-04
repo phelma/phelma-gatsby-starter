@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React, { useState } from 'react'
+// import { useState } from 'react'
 import { jsx } from 'theme-ui'
 import { Container, Box } from '@theme-ui/components'
 import { Link } from 'gatsby'
@@ -11,8 +11,8 @@ const NavItem = ({ children, ...props }) => (
 )
 
 const Navbar = () => {
-  const [active, setActive] = useState(false)
-  const toggleActive = () => setActive(!active)
+  // const [active, setActive] = useState(false)
+  // const toggleActive = () => setActive(!active)
 
   return (
     <Container as="nav" role="navigation" aria-label="main-navigation" p={2}>

@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 export const IndexPageTemplate = ({ image, title, heading, description }) => (
-  <Container px={2}>
+  <div>
     {/* TODO: use gatsby-image */}
     <div
       style={{
@@ -30,7 +30,7 @@ export const IndexPageTemplate = ({ image, title, heading, description }) => (
 
       <Link to="/products">See all products</Link>
     </section>
-  </Container>
+  </div>
 )
 
 IndexPageTemplate.propTypes = {

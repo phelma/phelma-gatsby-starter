@@ -1,10 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-import { Styled } from 'theme-ui'
-
 import { Flex, Container } from '@theme-ui/components'
-import { Global, css } from '@emotion/core'
+import { Global } from '@emotion/core'
 
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
