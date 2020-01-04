@@ -10,10 +10,10 @@ import Navbar from '../components/Navbar'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
-const TemplateWrapper = ({ children, meta = {} }) => {
+const TemplateWrapper = ({ children, frontmatter={} }) => {
   const defaultMeta = useSiteMetadata()
-  const title = meta.title || defaultMeta.title
-  const description = meta.description || defaultMeta.description
+  const title = frontmatter.metaTitle || defaultMeta.title
+  const description = frontmatter.metaDescription || defaultMeta.description
   
   return (
     <Flex
