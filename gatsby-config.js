@@ -1,5 +1,16 @@
 module.exports = {
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [ "UA-158934981-1" ],
+        pluginConfig: {
+          head: false,
+          respectDNT: true,
+          exclude: ["/preview/**", "/do-not-track/me/too/"],
+        },
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-theme-ui',
     'gatsby-theme-style-guide',
