@@ -1,5 +1,14 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: 'https://www.example.com'
+  },  
   plugins: [
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [`/category/*`, `/path/to/page`],
+      }
+    },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {

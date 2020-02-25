@@ -23,7 +23,6 @@
   - react-animated-css
 - sitemap.xml - gatsby addon
 - robots.txt - gatsby addon
-- GA - gatsby addon
 - LogRocket / Sentry / Fullstory
 - Environments
 
@@ -31,6 +30,7 @@
 - Contentful?
 
 # Done
+- ~~GA - gatsby addon~~
 - ~~Remove classNames and sass~~
 - ~~Emotion~~
 - ~~Theme UI~~
