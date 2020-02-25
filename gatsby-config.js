@@ -4,6 +4,12 @@ module.exports = {
   },  
   plugins: [
     {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
+    {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         exclude: [`/category/*`, `/path/to/page`],
